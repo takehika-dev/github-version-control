@@ -24,7 +24,7 @@ git remote add origin https://github.com/<your-username>/<your-repo-name>.git  #
 
 <br>
 
-2. Create `main` and `develop` Branches
+#### 2. Create `main` and `develop` Branches
 To maintain a clean workflow, we separate stable and development code.
 ```
 git checkout -b main  # Create and switch to the main branch
@@ -39,7 +39,7 @@ git push -u origin develop  # Push the develop branch to GitHub
 
 <br>
 
-3. Work on a New `feature`
+#### 3. Work on a New `feature`
 Every new functionality is developed in its own `feature` branch.
 ```
 git checkout -b feature/new-feature develop  # Create and switch to a feature branch from develop
@@ -52,7 +52,7 @@ git push -u origin feature/new-feature  # Push the feature branch to GitHub
 
 <br>
 
-4. Merge the `feature` into `develop`
+#### 4. Merge the `feature` into `develop`
 Once the `feature` is complete, it needs to be merged into `develop`.
 ```
 git checkout develop  # Switch to the develop branch
@@ -65,7 +65,7 @@ git push origin --delete feature/new-feature  # Delete the remote feature branch
 
 <br>
 
-5. Prepare for a `release`
+#### 5. Prepare for a `release`
 Once the project is stable, we create a `release` branch to finalize the update.
 ```
 git checkout -b release/1.0.0 develop  # Create a release branch from develop
@@ -78,7 +78,7 @@ git push -u origin release/1.0.0  # Push the release branch to GitHub
 
 <br>
 
-6. Merge `release` into `main` and `develop`
+#### 6. Merge `release` into `main` and `develop`
 Once everything is ready, `release` is merged into `main` and `develop`.
 ```
 git checkout main  # Switch to main
@@ -94,7 +94,7 @@ git push origin --delete release/1.0.0  # Delete the remote release branch
 
 <br>
 
-7. Apply a `hotfix` (Urgent Bug Fix in Main)
+#### 7. Apply a `hotfix` (Urgent Bug Fix in Main)
 If a critical issue is found in production, we need to fix it immediately.
 ```
 git checkout -b hotfix/urgent-bug-fix main  # Create a hotfix branch from main
@@ -107,7 +107,7 @@ git push -u origin hotfix/urgent-bug-fix  # Push the hotfix branch to GitHub
 
 <br>
 
-8. Merge Hotfix into `main` and `develop`
+#### 8. Merge Hotfix into `main` and `develop`
 Once the fix is verified, it should be merged into both `main` and `develop`.
 ```
 git checkout main  # Switch to main
