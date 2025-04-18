@@ -15,7 +15,7 @@ Using this structured approach makes collaboration easier and keeps your codebas
 
 
 ## How to start for beginners
-1. Setup the Repository
+#### 1. Setup the Repository
 Before we start coding, we need to initialize a Git repository and connect it to GitHub.
 ```
 git init  # Initialize a new Git repository
